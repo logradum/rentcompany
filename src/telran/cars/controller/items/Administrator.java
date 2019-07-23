@@ -23,6 +23,9 @@ public class Administrator extends RentCompanyItem{
 		Item[] items = {
 				new AddModelItem(inputOutput, company),
 				new AddCarItem(inputOutput, company),
+				new RemoveCarItem(inputOutput, company),
+				new ClearItem(inputOutput, company),
+				new GetDriverItem(inputOutput, company)
 		};
 		Menu menu = new MenuWithExit(inputOutput, items);
 		menu.runMenu();

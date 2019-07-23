@@ -1,0 +1,7 @@
+     1.1 The Application should comprise of the items that cover all the IRentCompany interface methods
+     1.2 All the items should be divided by 5 groups. Each group presents some application role
+       1.2.1 Administrator (addCar, addModel, removeCar, clear, getDriver)
+      1.2.2  Clerk (addDriver, rentCar, returnCar)
+       1.2.3 User (getModel, getDriverCars, getCarDrivers, getCar)
+       1.2.4 Statist (getModelProfit, getMostPopularModelNames, getMostProfitModelNames)
+       1.2.5 Technician (getAllCars, getAllDrivers, getAllRecords)
