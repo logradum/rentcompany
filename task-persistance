@@ -1,0 +1,12 @@
+Write persistence implementation for the Rent Company application
+1. Constructor for RentCompany should be private
+2. public static RentCompany restoreFromFile() {
+restoreFromFile(DEFAULT_FILE_NAME);
+}
+3. public static RentCompany  restoreFromFile(String fileName) the method should 
+try restore RentCompany object from the specified file. In the catch block the method
+creates the empty object by the new method
+  In the restored or created object the specified fileName should be set
+4. IRentCompany should have new method void save(String fileName)
+5. RentCompany should have an implementation of the method save with writing this
+object in the file the name of which should be in the proper field of the class.

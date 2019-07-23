@@ -1,0 +1,7 @@
+package telran.cars.dto;
+
+public enum CarsReturnCode {
+	OK, MODEL_EXISTS, CAR_EXISTS, NO_MODEL, DRIVER_EXISTS,
+	CAR_IN_USE, CAR_NOT_EXISTS, NO_DRIVER, CAR_NOT_RENTED,
+	RETURN_DATE_WRONG;
+}
