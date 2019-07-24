@@ -14,7 +14,6 @@ public class User extends RentCompanyItem{
 
 	@Override
 	public String displayedName() {
-		//
 		return "User";
 	}
 
@@ -22,6 +21,9 @@ public class User extends RentCompanyItem{
 	public void perform() {
 		Item[] items = {
 				new DisplayModelItem(inputOutput, company),
+				new DisplayDriverCarsItem(inputOutput, company),
+				new DisplayCarsByDriverItem(inputOutput, company),
+				new DisplayCarItem(inputOutput, company)
 		};
 		Menu menu = new MenuWithExit(inputOutput, items);
 		menu.runMenu();

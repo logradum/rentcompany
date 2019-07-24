@@ -19,7 +19,9 @@ public class Technician extends RentCompanyItem {
 
 	public void perform() {
 		Item[] items = {
-				new GetAllDriverItems(inputOutput, company),
+				new DisplayCarsItem(inputOutput, company),
+				new DisplayAllDrivers(inputOutput, company),
+				new DisplayAllRecords(inputOutput, company)
 		};
 		Menu menu = new MenuWithExit(inputOutput, items);
 		menu.runMenu();

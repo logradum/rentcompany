@@ -19,7 +19,7 @@ public class RentCarItem extends RentCompanyItem {
 
 	@Override
 	public void perform() {
-		Predicate<String> p = Pattern.compile("[0-9]{5-10}").asPredicate();
+		Predicate<String> p = Pattern.compile("[0-9]{5,10}").asPredicate();
 		String idString = inputOutput.getString("Please enter license ID", p);
 		Long licenseId = Long.parseLong(idString);
 		String regNumber = inputOutput.getString("Please enter registration number");

@@ -1,20 +1,21 @@
 package telran.cars.controller.items;
+
+import java.util.List;
 import java.util.function.Predicate;
 import java.util.regex.Pattern;
-
 import telran.cars.dao.IRentCompany;
-import telran.cars.domain.Driver;
+import telran.cars.domain.Car;
 import telran.view.InputOutput;
 
-public class GetDriverItem extends RentCompanyItem {
+public class DisplayDriverCarsItem extends RentCompanyItem {
 
-	public GetDriverItem(InputOutput inputOutput, IRentCompany company) {
+	public DisplayDriverCarsItem(InputOutput inputOutput, IRentCompany company) {
 		super(inputOutput, company);
 	}
 
 	@Override
 	public String displayedName() {
-		return "Display driver";
+		return "Display cars used by driver";
 	}
 
 	@Override
@@ -22,8 +23,8 @@ public class GetDriverItem extends RentCompanyItem {
 		Predicate<String> p = Pattern.compile("[0-9]{5,10}").asPredicate();
 		String idString = inputOutput.getString("Please enter license ID", p);
 		Long licenseId = Long.parseLong(idString);
-		Driver driver = company.getDriver(licenseId);
-		System.out.println(driver);
+		List<Car> cars = company.getDriverCars(licenseId);
+		cars.stream().forEach(System.out::println);
 	}
 
 }

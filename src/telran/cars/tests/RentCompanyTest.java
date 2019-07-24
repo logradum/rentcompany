@@ -49,7 +49,6 @@ public class RentCompanyTest {
 
 	@Before
 	public void setUp() throws Exception {
-		Class<?> clazz = IRentCompany.class;
 		//Constructor<?> constructor = clazz.getConstructor();
 		
 		company=RentCompany.restoreFromFile(null);

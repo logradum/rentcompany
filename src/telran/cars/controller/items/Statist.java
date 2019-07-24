@@ -20,7 +20,9 @@ public class Statist extends RentCompanyItem {
 	@Override
 	public void perform() {
 		Item[] items = {
-				new GetModelProfitItem(inputOutput, company)
+				new GetModelProfitItem(inputOutput, company),
+				new DisplayMostPopularModelNames(inputOutput, company),
+				new DisplayMostProfitModelNames(inputOutput, company),
 		};
 		Menu menu = new MenuWithExit(inputOutput, items);
 		menu.runMenu();
