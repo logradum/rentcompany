@@ -19,15 +19,15 @@ public class RentCompanyAppl {
 	public static void main(String[] args) {
 
 		InputOutput inputOutput = new ConsoleInputOutput();
-		IRentCompany persons = RentCompany.restoreFromFile(null);
+		IRentCompany company = RentCompany.restoreFromFile(null);
 		Item[] items = {
-				new Administrator(inputOutput, persons),
-				new User(inputOutput, persons),
-				new Clerk(inputOutput, persons),
-				new Technician(inputOutput, persons),
-				new Statist(inputOutput, persons),
-				new SaveCompany(inputOutput, persons),
-				new RestoreCompany(inputOutput, persons),
+				new Administrator(inputOutput, company),
+				new User(inputOutput, company),
+				new Clerk(inputOutput, company),
+				new Technician(inputOutput, company),
+				new Statist(inputOutput, company),
+				new SaveCompany(inputOutput, company),
+				new RestoreCompany(inputOutput, company),
 		};
 		Menu menu = new MenuWithExit(inputOutput, items);
 		menu.runMenu();

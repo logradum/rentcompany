@@ -1,5 +1,7 @@
 package telran.cars.controller.items;
 
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import telran.cars.dao.IRentCompany;
@@ -21,11 +23,12 @@ public class DisplayCarsItem extends RentCompanyItem {
 	public void perform() {
 
 		Stream<Car> cars = company.getAllCars();
-		boolean isEmpty = !(cars.findFirst().isPresent());
+		List<Car> carList = cars.collect(Collectors.toList());
+		boolean isEmpty = carList.isEmpty();
 		if (isEmpty) {
 			System.out.println("Sorry, there is no cars in Company.");
 		} else {
-			cars.forEach(System.out::println);
+			inputOutput.displayLine(carList);
 		}
 	}
 

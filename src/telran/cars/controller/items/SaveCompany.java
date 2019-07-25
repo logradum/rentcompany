@@ -19,6 +19,7 @@ public class SaveCompany extends RentCompanyItem {
 	@Override
 	public void perform() {
 		company.save("Company_"+LocalDate.now().toString());
+		System.out.println("saved successfully");
 	}
 
 }

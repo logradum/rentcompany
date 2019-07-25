@@ -52,7 +52,7 @@ public class RentCompany extends AbstractRentCompany implements Serializable {
 		
 		try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(fileName))) {
 			rentCompany = (RentCompany) in.readObject();
-			
+			System.out.println("Restored successfully");
 		} catch (Exception e) {
 		
 			rentCompany = new RentCompany();
