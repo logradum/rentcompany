@@ -5,8 +5,8 @@ import telran.view.InputOutput;
 public class GetModelProfitItem extends RentCompanyItem {
 
 
-	public GetModelProfitItem(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public GetModelProfitItem(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override

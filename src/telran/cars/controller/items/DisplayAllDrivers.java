@@ -8,8 +8,8 @@ import telran.view.InputOutput;
 
 public class DisplayAllDrivers extends RentCompanyItem {
 
-	public DisplayAllDrivers(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public DisplayAllDrivers(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override

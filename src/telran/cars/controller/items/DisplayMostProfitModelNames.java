@@ -7,8 +7,8 @@ import telran.view.InputOutput;
 
 public class DisplayMostProfitModelNames extends RentCompanyItem {
 
-	public DisplayMostProfitModelNames(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public DisplayMostProfitModelNames(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override

@@ -4,14 +4,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import telran.cars.dao.IRentCompany;
 import telran.cars.domain.Car;
 import telran.view.InputOutput;
 
 public class DisplayCarsItem extends RentCompanyItem {
 
-	public DisplayCarsItem(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public DisplayCarsItem(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override

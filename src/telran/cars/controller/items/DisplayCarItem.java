@@ -1,12 +1,11 @@
 package telran.cars.controller.items;
 
-import telran.cars.dao.IRentCompany;
 import telran.view.InputOutput;
 
 public class DisplayCarItem extends RentCompanyItem {
 
-	public DisplayCarItem(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public DisplayCarItem(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override

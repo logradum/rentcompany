@@ -1,6 +1,5 @@
 package telran.cars.controller.items;
 
-import telran.cars.dao.IRentCompany;
 import telran.view.InputOutput;
 import telran.view.Item;
 import telran.view.Menu;
@@ -8,8 +7,8 @@ import telran.view.MenuWithExit;
 
 public class Technician extends RentCompanyItem {
 
-	public Technician(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public Technician(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override
@@ -19,9 +18,9 @@ public class Technician extends RentCompanyItem {
 
 	public void perform() {
 		Item[] items = {
-				new DisplayCarsItem(inputOutput, company),
-				new DisplayAllDrivers(inputOutput, company),
-				new DisplayAllRecords(inputOutput, company)
+				new DisplayCarsItem(inputOutput),
+				new DisplayAllDrivers(inputOutput),
+				new DisplayAllRecords(inputOutput)
 		};
 		Menu menu = new MenuWithExit(inputOutput, items);
 		menu.runMenu();

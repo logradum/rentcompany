@@ -9,8 +9,8 @@ import telran.view.InputOutput;
 
 public class ClearItem extends RentCompanyItem {
 
-	public ClearItem(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public ClearItem(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override

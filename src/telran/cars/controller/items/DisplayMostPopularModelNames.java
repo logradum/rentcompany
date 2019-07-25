@@ -7,8 +7,8 @@ import telran.view.InputOutput;
 
 public class DisplayMostPopularModelNames extends RentCompanyItem {
 
-	public DisplayMostPopularModelNames(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public DisplayMostPopularModelNames(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override

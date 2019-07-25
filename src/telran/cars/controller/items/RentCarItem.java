@@ -8,8 +8,8 @@ import telran.view.InputOutput;
 
 public class RentCarItem extends RentCompanyItem {
 
-	public RentCarItem(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public RentCarItem(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override

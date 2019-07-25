@@ -1,14 +1,12 @@
 package telran.cars.controller.items;
 
-import telran.cars.dao.IRentCompany;
 import telran.cars.domain.Model;
 import telran.view.InputOutput;
 
 public class AddModelItem extends RentCompanyItem {
 
-	
-	public AddModelItem(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public AddModelItem(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override
@@ -23,7 +21,7 @@ public class AddModelItem extends RentCompanyItem {
 		String modelCompany = inputOutput.getString("Enter Company Name");
 		String country = inputOutput.getString("Enter factory country name");
 		int priceDay = inputOutput.getInteger("Please enter price per day");
-		Model model = new Model(modelName,gasTank,modelCompany,country,priceDay);
+		Model model = new Model(modelName, gasTank, modelCompany, country, priceDay);
 		company.addModel(model);
 	}
 

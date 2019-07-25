@@ -5,8 +5,8 @@ import telran.view.InputOutput;
 
 public class RemoveCarItem extends RentCompanyItem {
 
-	public RemoveCarItem(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public RemoveCarItem(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override

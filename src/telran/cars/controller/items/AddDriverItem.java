@@ -9,8 +9,8 @@ import telran.view.InputOutput;
 
 public class AddDriverItem extends RentCompanyItem {
 
-	public AddDriverItem(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public AddDriverItem(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override

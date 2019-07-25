@@ -8,8 +8,8 @@ public class DisplayModelItem extends RentCompanyItem {
 
 	
 
-	public DisplayModelItem(InputOutput inputOutput, IRentCompany company) {
-		super(inputOutput, company);
+	public DisplayModelItem(InputOutput inputOutput) {
+		super(inputOutput);
 	}
 
 	@Override
